@@ -16,7 +16,7 @@ after_success:
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and 
-  - docker push lczmdr/multi-client
-  - docker push lczmdr/multi-nginx
-  - docker push lczmdr/multi-server
-  - docker push lczmdr/multi-worker
+  - docker push lczmdr/multi-client:latest
+  - docker push lczmdr/multi-nginx:latest
+  - docker push lczmdr/multi-server:latest
+  - docker push lczmdr/multi-worker:latest
