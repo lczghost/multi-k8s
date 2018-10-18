@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: stephengrider/multi-client
+          # image: stephengrider/multi-client
+          image: lczmdr/multi-client
           ports:
             - containerPort: 3000
